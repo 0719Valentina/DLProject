@@ -1,0 +1,5 @@
+runs_dir: output
+seed: 13
+frames: 20
+
+inpainting_prompt: "POV, walkthrough, the Elegant Staircase from sks BeautyandtheBeast, masterpiece, indoor scene, best quality"
