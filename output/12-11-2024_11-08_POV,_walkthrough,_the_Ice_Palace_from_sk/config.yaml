@@ -1,0 +1,50 @@
+device: cuda
+negative_inpainting_prompt: text, writings, signs, text,white border, photograph border,
+  artifacts, blur, smooth texture, foggy, fog, bad quality, distortions, unrealistic,
+  distorted image, watermark, signature, fish-eye look, windows, people, crowd, outdoor,
+  landscape, view, chandelier
+motion: rotations
+extrinsics: null
+intrinsics: null
+camera_speed_factor: 0.035
+no_rotations_steps: 0
+rotation_steps: 10
+rotation_range: 0.03
+rotate_radius: median
+full_circle_epochs: 100
+change_translation_every: 20
+use_splatting: false
+blur_radius: 1.0e-07
+mesh_exclude_boundaries: true
+min_triangle_angle: -1
+normal_filtering_threshold: -0.05
+min_connected_component_size: 0
+connect_mesh: true
+fix_floating_artifacts: true
+antialiasing_factor: 2
+big_resolution: 1024
+init_focal_length: 500
+finetune_decoder: true
+decoder_learning_rate: 0.0001
+num_finetune_decoder_steps: 100
+preservation_weight: 100
+stable_diffusion_checkpoint: dreamBooth/stable-diffusion-inpainting-frozen
+num_inpainting_steps: 50
+classifier_free_guidance_scale: 7.5
+inpainting_resolution: 600
+finetune_depth_model: true
+depth_model_learning_rate: 1.0e-07
+num_finetune_depth_model_steps: 300
+save_fps: 10
+use_xformers: false
+starting_image: null
+enable_mix_precision: true
+sobel_beta: 12
+sobel_threshold: 0.3
+mask_opening_kernel_size: 3
+min_disparity: 0.01
+runs_dir: output
+seed: 13
+frames: 20
+inpainting_prompt: POV, walkthrough, the Ice Palace from sks Frozen, masterpiece,
+  indoor scene, best quality
